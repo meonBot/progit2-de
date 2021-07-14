@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: ""
+labels: "bug"
+assignees: ""
 
 ---
 
@@ -12,11 +12,7 @@ assignees: ''
 <!-- * This bug report is about a single actionable bug. -->
 <!-- * This bug is about the Pro Git book, version 2, English language. -->
 <!-- * This bug is about the book as found on the [website](https://www.git-scm.com/book/en/v2) or the pdf. -->
-<!-- * If you found a issue in the pdf/epub/mobi files, you've checked if the problem is also present in the Pro Git book on the [website](https://www.git-scm.com/book/en/v2). -->
-<!-- * This bug is **not** about a translation, if so please file a bug with the translation project. You can find a table of translation projects here: [progit2/TRANSLATING.md](https://github.com/progit/progit2/blob/master/TRANSLATING.md) -->
-<!-- * This bug is **not** about the git-scm.com site, if so please file a bug here: [git-scm.com/issues/new](https://github.com/git/git-scm.com/issues/new) -->
-<!-- * This bug is **not** about git the program itself, if so please file a bug here: [git-scm.com/community](https://git-scm.com/community) -->
-<!-- * This bug is **not** about Git for Windows, if so please file a bug here: [git-for-windows/git](https://github.com/git-for-windows/git). -->
+<!-- * If you found an issue in the pdf/epub/mobi files, you've checked if the problem is also present in the Pro Git book on the [website](https://www.git-scm.com/book/en/v2). -->
 
 **Which version of the book is affected?**
 <!-- It's important for us to know if the problem is in the source or in the tooling for the pdf/epub/mobi files. -->
@@ -58,7 +54,7 @@ assignees: ''
 - Browser/application version:
 
 **E-book reader:**
-<!-- If you've used a e-book reader to access the content, please fill in this form. -->
+<!-- If you've used an e-book reader to access the content, please fill in this form. -->
 <!-- Example: Amazon Kindle Paperwhite 10th generation, software update 5.11.1 -->
 - Device:
 - Software Update:

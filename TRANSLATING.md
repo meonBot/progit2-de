@@ -44,6 +44,7 @@ Die folgenden Richtlinien sollen Ihnen auf Ihrem Weg helfen:
 | Русский   | [progit/progit2-ru](https://github.com/progit/progit2-ru) |
 | Slovenščina  | [progit/progit2-sl](https://github.com/progit/progit2-sl) |
 | Српски   | [progit/progit2-sr](https://github.com/progit/progit2-sr) |
+| Svenska | [progit2-sv/progit2](https://github.com/progit2-sv/progit2) |
 | Tagalog   | [progit2-tl/progit2](https://github.com/progit2-tl/progit2) |
 | Türkçe   | [progit/progit2-tr](https://github.com/progit/progit2-tr) |
 | Українська| [progit/progit2-uk](https://github.com/progit/progit2-uk) |
@@ -57,7 +58,7 @@ Wenn es noch kein Projekt für Ihre Sprache gibt, können Sie eine eigene Übers
 
 Grundlage Ihrer Arbeit ist die zweite Ausgabe des Buches, die [hier](https://github.com/progit/progit2) verfügbar ist. So sollten Sie vorgehen:
  1. Wählen Sie den richtigen [ISO 639-Code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) für Ihre Sprache.
- 1. Erstellen Sie eine [GitHub-Organisation](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch), z.B. `progit2-[Ihr_Code]` auf GitHub.
+ 1. Erstellen Sie eine [GitHub-Organisation](https://docs.github.com/de/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch), z.B. `progit2-[Ihr_Code]` auf GitHub.
  1. Erstellen Sie ein Projekt ``progit2``.
  1. Kopieren Sie die Struktur von progit/progit2 (dieses Projekt) in Ihr Projekt und beginnen Sie mit der Übersetzung.
 
@@ -71,22 +72,13 @@ Auf https://git-scm.com sind die Übersetzungen in drei Kategorien eingeteilt. S
 | unvollständige Übersetzungen verfügbar in | übersetzt bis Kapitel 6. |
 | Vollständige Übersetzung verfügbar in | das Buch ist (fast) vollständig übersetzt. |
 
-## Kontinuierliche Integration mit Travis CI
+## Kontinuierliche Integration mit Github Actions
 
-Travis CI ist ein Dienst für [kontinuierliche Integration](https://en.wikipedia.org/wiki/Continuous_integration), der in GitHub integriert werden kann. Travis CI wird verwendet, um sicherzustellen, dass eine Pull-Anforderung den Build oder die Kompilierung nicht unterbricht. Travis CI kann auch kompilierte Versionen des Buches zur Verfügung stellen.
+GitHub Actions ist ein [Continuous Integration](https://de.wikipedia.org/wiki/Kontinuierliche_Integration)-Dienst, der in GitHub integriert ist. GitHub Actions wird verwendet, um sicherzustellen, dass ein Pull-Request den Build oder die Kompilierung nicht unterbricht. GitHub Actions kann auch kompilierte Versionen des Buchs bereitstellen.
 
-Die Einrichtung von Travis CI erfordert eine administrative Kontrolle über das Repository.
-
-### Registrierung für die kontinuierliche Integration von Travis
-
-1. Ein Travis-Konto [hier](https://travis-ci.org/) einrichten.
-1. Registrieren Sie Ihr Projekt in Travis.
-Weitere Informationen finden Sie in der [Travis-Dokumentation](https://docs.travis-ci.com/).
-
-### Einrichten Ihres Repositorys für eine kontinuierliche Integration
-
-Travis CI scannt das Stammverzeichnis Ihres Projekts nach einer Datei mit dem Namen `.travis.yml` und folgt dem darin enthaltenen „Rezept“. Die gute Nachricht ist: Es gibt bereits eine funktionierende `.travis.yml` Datei im Pro Git 2 Quellcode [hier](https://raw.githubusercontent.com/progit/progit2-pub/master/travis.yml).
-Kopieren Sie diese Datei und legen Sie sie in Ihr Arbeitsverzeichnis. Commitieren Sie die .yml-Datei und verschieben Sie sie in Ihr Übersetzungs-Repository; das sollte eine Kompilierung und eine Überprüfung des Inhalts des Buches auslösen.
+Die Konfiguration für GitHub-Aktionen ist im Verzeichnis `.github/workflows` enthalten, und wenn Sie den `main`-Zweig des Root-Repositorys einbinden, erhalten Sie sie kostenlos.
+Wenn Sie jedoch Ihr Übersetzungsrepo erstellt haben, indem Sie das Root-Repository _geforked_ haben, müssen Sie einen zusätzlichen Schritt ausführen (wenn Sie keinen Fork gemacht haben, können Sie diesen Teil überspringen).
+GitHub geht davon aus, dass Forks verwendet werden, um zu dem Repository beizutragen, aus dem sie geforked wurden. Sie müssen also die Registerkarte „Aktionen“ in Ihrem geforktem Repository aufrufen und auf die Schaltfläche „Ich verstehe meine Workflows“ klicken, um die Aktionen zuzulassen.
 
 ## Einrichtung einer Publikationskette für E-Books
 
